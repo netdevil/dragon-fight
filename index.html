@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="bower_components/angular/angular-csp.css" rel="stylesheet">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="jsonrpc.js"></script>
+</head>
+<body>
+<div ng-app="test-module-jsonrpc">
+    <div ng-controller="TestController">
+        <div ng-style="{'display':(show)}">
+            Hello, {{name}}. Here are some people on your team:<br/>
+        </div>
+
+        <ul>
+            <li ng-repeat="t in team">{{t}}</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
